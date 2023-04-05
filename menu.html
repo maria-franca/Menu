@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="toggle"><span></span></div>
+        <ul>
+            <li style="--i:0;"><a href="#">Inicio</a></li>
+            <li style="--i:0;"><a href="#">Sobre</a></li>
+            <li style="--i:0;"><a href="#">Carrinho</a></li>
+            <li style="--i:0;"><a href="#">Favoritos</a></li>
+            <li style="--i:0;"><a href="#">Contato</a></li>
+
+        </ul>
+        
+    </div>
+    <script>
+        let navigation = document.querySelector('.navigation');
+        document.querySelector('.toggle').onclick = function()
+        {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+
+        }
+    </script>
+
+
+</body>
+</html>
